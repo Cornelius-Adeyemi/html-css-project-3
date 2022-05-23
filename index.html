@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Survey Form">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Adebisi Adeyemi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+<body>
+        
+<main> 
+    <h1 id="title"> freeCodeCamp Survey Form </h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>
+    
+    <div id="div-form">
+    <form id="survey-form">
+    <label id="name-label" for="name">Name</label> <br>
+    <input type="text" name="name" id="name" required="required" placeholder="Enter your name"><br><br>
+    <label id="email-label" for="email">Email</label> <br>
+    <input type="email" name="email" id="email" required="required" placeholder="Enter your email"><br><br>
+    <label id="number-label" for="number">Age(optional)<label><br>
+    <input type="number" name="age" id="number" min="10" max="99" placeholder="Age"><br><br>
+    <p>Which option best describes your current role?<p>
+    <select id="dropdown" required="required"> 
+    <option> Select current role</option>
+    <option value="student"> Student</option>
+    <option value="full-time-job">Full time job</option>
+    <option value="full-time-learner">Full time learner</option>
+    <option value="prefer-">prefer not to</option>
+    <option value="other">other</option>
+    </select>
+    
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    
+    <label for="defi"><input id="defi" type="radio" name="recommend" value="definitely" checked> Definitely</label><br>
+    <label for="maybe"><input id="maybe" type="radio" name="recommend" value="maybe"> Maybe</label><br>
+    <label for="notsure"><input id="notsure" type="radio" name="recommend" value="notsure"> Not sure</label>
+    
+    <p>What is your favorite feature of freeCodeCamp? </p>
+    <select id="dropdown" required="required"> 
+    <option> select an option </option>
+    <option value="challenges"> challenges</option>
+    <option value="projects"> projects</option>
+    <option value="community"> community</option>
+    <option value="open source"> Open Source</option>
+    </select>
+    
+    <p> What would you like to see improved? (Check all that apply)</p>
+    
+    <label for="front"><input id="front" type="checkbox" name="like" value="front-end projects">Front-end projects</label><br>
+    <label for="Back-end"><input id="Back-end" type="checkbox" name="like" value="back-end projects">Back-end projects</label><br>
+    <label for="Data"><input id="Data" type="checkbox" name="like" value="Data Visualization">Data Visualization</label><br>
+    <label for="challenges"><input id="challenges" type="checkbox" name="like" value="challenges">Challenges</label> <br>
+    <label for="open"><input id="open" type="checkbox" name="like" value="open source community">Open Source Community</label><br>
+    <label for="gitter"><input id="gitter" type="checkbox" name="like" value="gitter help rooms">Gitter help rooms</label><br>
+    <label for="videos"><input id="videos" type="checkbox" name="like" value="vidoes">videos</label><br>
+    <label for="city"><input id="city" type="checkbox" name="like" value="city meetups">City Meetups</label><br>
+    <label for="wiki"><input id="wiki" type="checkbox" name="like" value="wiki">Wiki</label> <br>
+    <label for="forum"><input id="forum" type="checkbox" name="like" value="forum">Forum</label><br>
+    <label for="additional"><input id="additional" type="checkbox" name="like" value="additional Courses">Additional Courses</label><br><br>
+    <label for="comment">Any comments or suggestions</label><br>
+    
+    <textarea id="comment" name="comment" rows="6" cols="50" placeholder="Enter your comment here"> </textarea><br><br>
+    <input id="submit" type="submit" value="submit">
+    
+     </form>
+     </div>
+    </main>
+    </body>
+</html>
